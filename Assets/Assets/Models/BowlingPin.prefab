@@ -101,6 +101,7 @@ GameObject:
   - component: {fileID: 9131162474302221479}
   - component: {fileID: 7377242598652683574}
   - component: {fileID: 5029569519270119048}
+  - component: {fileID: 1340039861168859119}
   m_Layer: 0
   m_Name: BowlingPin
   m_TagString: Untagged
@@ -132,9 +133,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5215871716501764652}
   serializedVersion: 5
-  m_Mass: 1
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
+  m_Mass: 0.85
+  m_LinearDamping: 0.1
+  m_AngularDamping: 0.1
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -158,7 +159,7 @@ CapsuleCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5215871716501764652}
-  m_Material: {fileID: 13400000, guid: 590dbebc6f287b940ac52b3dfea3bfc1, type: 2}
+  m_Material: {fileID: 13400000, guid: 930bb42a3fb880e4fb2124af865a7614, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -171,9 +172,27 @@ CapsuleCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.16
-  m_Height: 0.9
+  m_Height: 1
   m_Direction: 1
-  m_Center: {x: 0, y: 0.45, z: 0}
+  m_Center: {x: 0, y: 0.5, z: 0}
+--- !u!114 &1340039861168859119
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5215871716501764652}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13ab760fd61148744a61d637eb735de5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MultiballVR.BowlingPinController
+  m_ResetDelay: 120
+  m_KnockedAngleThreshold: 40
+  m_KnockedDistanceThreshold: 0.35
+  m_PinHitSound: {fileID: 8300000, guid: 5c6f2fbada70afa43b9a8a411b217237, type: 3}
+  m_HitVolume: 0.7
+  m_MinHitSpeed: 0.8
 --- !u!1 &5302427443256131225
 GameObject:
   m_ObjectHideFlags: 0
@@ -199,7 +218,7 @@ Transform:
   m_GameObject: {fileID: 5302427443256131225}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.7071068, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
