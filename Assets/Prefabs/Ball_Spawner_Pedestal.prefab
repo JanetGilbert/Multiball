@@ -78,7 +78,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6b2fa2365722c44091eba421d63fb21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MultiballVR.BallSpawner
-  m_BallPrefab: {fileID: 8715551849470497530, guid: 474eb70c6be95a1418906fa3ddfbb097, type: 3}
+  m_BallPrefab: {fileID: 5764421379946718951, guid: f9ad5ad7e18fcb3448f625939f0148c1, type: 3}
   m_SpawnPoint: {fileID: 6472241860504863261}
   m_RespawnDelay: 1.2
   m_PickupDistanceThreshold: 0.35

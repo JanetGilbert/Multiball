@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &4958892922243551008
+--- !u!1 &4816641256130392337
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,46 +8,52 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 904499388612177549}
-  - component: {fileID: 2154591805130725063}
-  - component: {fileID: 3119152194967493255}
+  - component: {fileID: 177891440315899304}
+  - component: {fileID: 1110915991086907632}
+  - component: {fileID: 9023431124065458462}
+  - component: {fileID: 5526529047392611141}
+  - component: {fileID: 3053703508567610939}
+  - component: {fileID: 462314250605878372}
+  - component: {fileID: 2648806887429886457}
+  - component: {fileID: 6242254368256168458}
+  - component: {fileID: 6800875502687928336}
   m_Layer: 0
-  m_Name: Visuals
+  m_Name: PingPongBall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &904499388612177549
+--- !u!4 &177891440315899304
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4958892922243551008}
+  m_GameObject: {fileID: 4816641256130392337}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.065, y: 0.065, z: 0.065}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 5156570277218908440}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &2154591805130725063
+--- !u!33 &1110915991086907632
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4958892922243551008}
+  m_GameObject: {fileID: 4816641256130392337}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!23 &3119152194967493255
+--- !u!23 &9023431124065458462
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4958892922243551008}
+  m_GameObject: {fileID: 4816641256130392337}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -66,7 +72,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: f5cd77343d6ca1949b1d2d7511848832, type: 2}
+  - {fileID: 2100000, guid: 18ae8753a83ae8846b8c399df17e9c51, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -75,7 +81,7 @@ MeshRenderer:
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
   m_ReceiveGI: 1
-  m_PreserveUVs: 1
+  m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
   m_StitchLightmapSeams: 1
@@ -90,55 +96,38 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!1 &8715551849470497530
-GameObject:
+--- !u!135 &5526529047392611141
+SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 5156570277218908440}
-  - component: {fileID: 6236484042477407960}
-  - component: {fileID: 467826228749767703}
-  - component: {fileID: 4651504251922973823}
-  - component: {fileID: 1834452831469431604}
-  - component: {fileID: 3162780265446256539}
-  - component: {fileID: 4865379543774574565}
-  m_Layer: 0
-  m_Name: Ball_Splittable
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &5156570277218908440
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8715551849470497530}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.22, y: 0.22, z: 0.22}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 904499388612177549}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &6236484042477407960
+  m_GameObject: {fileID: 4816641256130392337}
+  m_Material: {fileID: 13400000, guid: 590dbebc6f287b940ac52b3dfea3bfc1, type: 2}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &3053703508567610939
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8715551849470497530}
+  m_GameObject: {fileID: 4816641256130392337}
   serializedVersion: 5
-  m_Mass: 0.5
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
+  m_Mass: 0.05
+  m_LinearDamping: 0.4
+  m_AngularDamping: 0.5
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -155,34 +144,13 @@ Rigidbody:
   m_Interpolate: 1
   m_Constraints: 0
   m_CollisionDetection: 2
---- !u!135 &467826228749767703
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8715551849470497530}
-  m_Material: {fileID: 13400000, guid: 590dbebc6f287b940ac52b3dfea3bfc1, type: 2}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &4651504251922973823
+--- !u!114 &462314250605878372
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8715551849470497530}
+  m_GameObject: {fileID: 4816641256130392337}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
@@ -259,7 +227,7 @@ MonoBehaviour:
   m_ReinitializeDynamicAttachEverySingleGrab: 1
   m_AttachEaseInTime: 0.15
   m_MovementType: 0
-  m_PredictedVisualsTransform: {fileID: 904499388612177549}
+  m_PredictedVisualsTransform: {fileID: 0}
   m_VelocityDamping: 1
   m_VelocityScale: 1
   m_AngularVelocityDamping: 1
@@ -306,13 +274,13 @@ MonoBehaviour:
   m_LimitAngularVelocity: 0
   m_MaxLinearVelocityDelta: 10
   m_MaxAngularVelocityDelta: 20
---- !u!114 &1834452831469431604
+--- !u!114 &2648806887429886457
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8715551849470497530}
+  m_GameObject: {fileID: 4816641256130392337}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d0a1302d0d134fa8a2a5b3bf4aec3c20, type: 3}
@@ -329,13 +297,13 @@ MonoBehaviour:
   m_MinimumScaleRatio: 0.25
   m_MaximumScaleRatio: 2
   m_ScaleMultiplier: 0.25
---- !u!114 &3162780265446256539
+--- !u!114 &6242254368256168458
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8715551849470497530}
+  m_GameObject: {fileID: 4816641256130392337}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d6b72270b5dc59d4bb14ec9470d81ac9, type: 3}
@@ -348,30 +316,30 @@ MonoBehaviour:
   m_MinSplitCount: 2
   m_MaxSplitCount: 8
   m_ScaleMultiplier: 0.65
-  m_CurrentGeneration: 0
+  m_CurrentGeneration: 2
   m_MaxGenerations: 2
-  m_ChildBallPrefab: {fileID: 8715551849470497530}
-  m_SpreadAngle: 40
+  m_ChildBallPrefab: {fileID: 0}
+  m_SpreadAngle: 35
   m_VelocityMultiplier: 0.85
   m_AdditionalBurstSpeed: 1.5
-  m_SplitVFXPrefab: {fileID: 1489233782672170667, guid: 92b3729eedba01c4a9c9a58078a8d613, type: 3}
-  m_SplitSound: {fileID: 8300000, guid: 3fcd03c751fffa546b134948f7b6994a, type: 3}
+  m_SplitVFXPrefab: {fileID: 0}
+  m_SplitSound: {fileID: 0}
   m_SoundVolume: 0.8
   m_ChildLifetime: 60
---- !u!114 &4865379543774574565
+--- !u!114 &6800875502687928336
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8715551849470497530}
+  m_GameObject: {fileID: 4816641256130392337}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d55c271ca6c753445946425556ea342e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MultiballVR.BallBounceSound
   m_BounceSound: {fileID: 8300000, guid: 5c6f2fbada70afa43b9a8a411b217237, type: 3}
-  m_MinSpeedForSound: 0.8
+  m_MinSpeedForSound: 0.6
   m_MaxVolumeSpeed: 8
-  m_BaseVolume: 0.7
+  m_BaseVolume: 0.6
   m_Cooldown: 0.08

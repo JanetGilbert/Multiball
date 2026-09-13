@@ -1,0 +1,23 @@
+{
+    "asset": "f9ad5ad7e18fcb3448f625939f0148c1",
+    "fileName": "01a0985d-effb-7495-95b5-b3623946a309.glb",
+    "prompt": "Bowling ball red",
+    "negativePrompt": "",
+    "model": "model3d-tripo-p1",
+    "modelName": "Tripo P1",
+    "customSeed": -1,
+    "w3CTraceId": "",
+    "feedback": 0,
+    "refinementMode": "Generation",
+    "promptImageReferenceGuid": "351596a38d759184eaf9131bf02f34bb",
+    "modelReferenceGuid": "",
+    "multiviewFrontGuid": "",
+    "multiviewBackGuid": "",
+    "multiviewLeftGuid": "",
+    "multiviewRightGuid": "",
+    "multiviewTopGuid": "",
+    "multiviewBottomGuid": "",
+    "multiviewLeftFrontGuid": "",
+    "multiviewRightFrontGuid": "",
+    "faceLimit": 5000
+}

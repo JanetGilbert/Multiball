@@ -155,8 +155,7 @@ namespace MultiballVR
 
             // Spawn child balls
             GameObject prefabToSpawn = m_ChildBallPrefab != null ? m_ChildBallPrefab : gameObject;
-            Vector3 baseChildScale = transform.localScale * m_ScaleMultiplier;
-            float childMass = Mathf.Max(0.1f, m_Rigidbody.mass * Mathf.Pow(m_ScaleMultiplier, 3f));
+            Vector3 baseChildScale = m_ChildBallPrefab != null ? m_ChildBallPrefab.transform.localScale : (transform.localScale * m_ScaleMultiplier);
             float childLaunchSpeed = (impactSpeed * m_VelocityMultiplier) + m_AdditionalBurstSpeed;
 
             for (int i = 0; i < splitCount; i++)
@@ -175,15 +174,18 @@ namespace MultiballVR
                 // Configure child components
                 if (child.TryGetComponent(out Rigidbody childRb))
                 {
-                    childRb.mass = childMass;
                     childRb.linearVelocity = spawnDir * (childLaunchSpeed * Random.Range(0.85f, 1.15f));
-                    childRb.angularVelocity = Random.insideUnitSphere * 10f;
+                    childRb.angularVelocity = Random.insideUnitSphere * 15f;
                 }
 
                 if (child.TryGetComponent(out BallImpactSplitter childSplitter))
                 {
                     childSplitter.CurrentGeneration = m_CurrentGeneration + 1;
-                    childSplitter.ChildBallPrefab = m_ChildBallPrefab != null ? m_ChildBallPrefab : child;
+                    // If the instantiated child didn't already have a child prefab configured, pass down or use own
+                    if (childSplitter.ChildBallPrefab == null && m_ChildBallPrefab == null)
+                    {
+                        childSplitter.ChildBallPrefab = gameObject;
+                    }
                 }
             }
 

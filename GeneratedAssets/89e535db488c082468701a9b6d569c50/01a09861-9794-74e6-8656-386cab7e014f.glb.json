@@ -1,0 +1,23 @@
+{
+    "asset": "89e535db488c082468701a9b6d569c50",
+    "fileName": "01a09861-9794-74e6-8656-386cab7e014f.glb",
+    "prompt": "Tennis ball",
+    "negativePrompt": "",
+    "model": "model3d-tripo-p1",
+    "modelName": "Tripo P1",
+    "customSeed": -1,
+    "w3CTraceId": "",
+    "feedback": 0,
+    "refinementMode": "Generation",
+    "promptImageReferenceGuid": "9d981c6940af3774abf5b1b5949ace27",
+    "modelReferenceGuid": "",
+    "multiviewFrontGuid": "",
+    "multiviewBackGuid": "",
+    "multiviewLeftGuid": "",
+    "multiviewRightGuid": "",
+    "multiviewTopGuid": "",
+    "multiviewBottomGuid": "",
+    "multiviewLeftFrontGuid": "",
+    "multiviewRightFrontGuid": "",
+    "faceLimit": 5291
+}
