@@ -1,0 +1,23 @@
+{
+    "asset": "3747775365cb6754b9facbbd19f0fbe3",
+    "fileName": "01a09830-77e4-7a6e-a00a-c3fa0a6a391a.glb",
+    "prompt": "A ten pin bowling pin",
+    "negativePrompt": "",
+    "model": "model3d-tripo-p1",
+    "modelName": "Tripo P1",
+    "customSeed": -1,
+    "w3CTraceId": "",
+    "feedback": 0,
+    "refinementMode": "Generation",
+    "promptImageReferenceGuid": "d62ea9d62844c404fa14937045439bad",
+    "modelReferenceGuid": "",
+    "multiviewFrontGuid": "",
+    "multiviewBackGuid": "",
+    "multiviewLeftGuid": "",
+    "multiviewRightGuid": "",
+    "multiviewTopGuid": "",
+    "multiviewBottomGuid": "",
+    "multiviewLeftFrontGuid": "",
+    "multiviewRightFrontGuid": "",
+    "faceLimit": 5000
+}
