@@ -586,6 +586,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   cam: {fileID: 1048881348}
+  inputActions: {fileID: -944628639613478452, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  inputForward:
+    m_Name: Input Forward
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 8ee4f797-98c3-4026-a370-4deb33f51fc0
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+    m_Flags: 0
+    m_Priority: 0
 --- !u!136 &1105738629
 CapsuleCollider:
   m_ObjectHideFlags: 0
