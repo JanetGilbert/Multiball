@@ -18,9 +18,10 @@ public class CharacterMovement : MonoBehaviour
     void Update()
     {
       transform.rotation = Quaternion.Euler(0, cam.transform.rotation.eulerAngles.y, 0);
-      //transform.position = cam.transform.position + new Vector3(cam.transform.forward.x, 0, cam.transform.forward.z) * 0.5f;
+      transform.position = new Vector3(cam.transform.position.x, 0, cam.transform.position.z) + 
+                            new Vector3(cam.transform.forward.x, 0, cam.transform.forward.z) * 0.5f;
    
-        if (inputForward != null)
+     /*   if (inputForward != null)
         {
             float inputValue = inputForward.ReadValue<float>();
             transform.Translate(Vector3.forward * inputValue * Time.deltaTime);
@@ -31,7 +32,7 @@ public class CharacterMovement : MonoBehaviour
             float inputValue = inputBackward.ReadValue<float>();
             Debug.Log($"Input back Value: {inputValue}");
             transform.Translate(Vector3.back * inputValue * Time.deltaTime);
-        }
+        }*/
     }
                      
 }
