@@ -22,7 +22,7 @@ public class CharacterMovement : MonoBehaviour
    
     void Update()
     {
-        transform.rotation = Quaternion.Euler(0, cam.transform.rotation.eulerAngles.y, 0);
+      //  transform.rotation = Quaternion.Euler(0, cam.transform.rotation.eulerAngles.y, 0);
 
         if (moveAction != null)
         {
@@ -33,13 +33,19 @@ public class CharacterMovement : MonoBehaviour
 
             if (Mathf.Abs(move.y) > trigger)
             {
-                Debug.Log("Move Input Value: " + move.y);
                 transform.Translate(Vector3.forward * move.y * Time.deltaTime);
                 animator.SetBool("Moving", true);
             }
             else
             {
                 animator.SetBool("Moving", false);
+            }
+
+            if (Mathf.Abs(move.x) > trigger)
+            {
+               //transform.rotation = Quaternion.Euler(0, cam.transform.rotation.eulerAngles.y + (move.x * 90), 0);
+                transform.Rotate(0, move.x * 100.0f * Time.deltaTime, 0);
+
             }
     
         }
